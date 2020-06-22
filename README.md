@@ -6,17 +6,26 @@ This is the starter code for the Route Planning project. Instructions for each e
 
 When cloning this project, be sure to use the `--recurse-submodules` flag. Using HTTPS:
 ```
-git clone https://github.com/udacity/CppND-Route-Planning-Project.git --recurse-submodules
+git clone https://github.com/adityakrmaurya/Route-Planning.git --recurse-submodules
 ```
 or with SSH:
 ```
-git clone git@github.com:udacity/CppND-Route-Planning-Project.git --recurse-submodules
+git clone git@github.com:adityakrmaurya/Route-Planning.git --recurse-submodules
 ```
 
 ## Compiling and Running
 
+### Compiling
+To compile the project, first, create a `build` directory and change to that directory:
+```
+mkdir build && cd build
+```
+From within the `build` directory, then run `cmake` and `make` as follows:
+```
+cmake ..
+make
+```
 ## Dependencies for Running Locally
-
 * cmake >= 3.11.3
   * All OSes: [click here for installation instructions](https://cmake.org/install/)
 * make >= 4.1 (Linux, Mac), 3.81 (Windows)
@@ -32,17 +41,6 @@ git clone git@github.com:udacity/CppND-Route-Planning-Project.git --recurse-subm
   * Note: Make sure to run `sudo make install`
   * This library must be built in a place where CMake `find_package` will be able to find it
 
-### Compiling
-
-To compile the project, first, create a `build` directory and change to that directory:
-```
-mkdir build && cd build
-```
-From within the `build` directory, then run `cmake` and `make` as follows:
-```
-cmake ..
-make
-```
 ### Running
 The executables will be placed in the `bin` directory. From within `build`, you can run the project as follows:
 ```
