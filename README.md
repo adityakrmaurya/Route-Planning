@@ -73,5 +73,4 @@ Exercises with tests will specify which string to pass with `-DTESTING`, but a t
 | Find the Closest Node       |       "FindClosest"      |
 | Write the A\* Search Stub   |        "AStarStub"       |
 | Finish A\* Search           |       "AStarSearch"      |
-|-----------------------------|--------------------------|
 
