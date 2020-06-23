@@ -17,6 +17,7 @@ public:
     float g_value = 0.0;
     bool visited = false;
     std::vector<Node *> neighbors;
+
     float distance(Node node) const {
       return std::sqrt(std::pow((x - node.x), 2) + std::pow((y - node.y), 2));
     }
@@ -39,6 +40,7 @@ public:
                           // is found by the A* search.
   auto &SNodes() { return m_Nodes; };
   auto &GetNodeToRoadMap() { return node_to_road; }
+  Node &FindClosestNode(float x, float y);
 
 private:
   // Add private RouteModel variables and methods here.
