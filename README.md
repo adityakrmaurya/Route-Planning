@@ -1,4 +1,4 @@
-# Route Planning Project Starter Code
+# Route Planning
 
 This is the starter code for the Route Planning project. Instructions for each exercise can be found in the `instructions` directory, and unit tests for some exercises in the `test` directory.
 
@@ -15,16 +15,6 @@ git clone git@github.com:adityakrmaurya/Route-Planning.git --recurse-submodules
 
 ## Compiling and Running
 
-### Compiling
-To compile the project, first, create a `build` directory and change to that directory:
-```
-mkdir build && cd build
-```
-From within the `build` directory, then run `cmake` and `make` as follows:
-```
-cmake ..
-make
-```
 ## Dependencies for Running Locally
 * cmake >= 3.11.3
   * All OSes: [click here for installation instructions](https://cmake.org/install/)
@@ -41,6 +31,16 @@ make
   * Note: Make sure to run `sudo make install`
   * This library must be built in a place where CMake `find_package` will be able to find it
 
+### Compiling
+To compile the project, first, create a `build` directory and change to that directory:
+```
+mkdir build && cd build
+```
+From within the `build` directory, then run `cmake` and `make` as follows:
+```
+cmake ..
+make
+```
 ### Running
 The executables will be placed in the `bin` directory. From within `build`, you can run the project as follows:
 ```
