@@ -36,8 +36,11 @@ public:
   std::vector<Node> path; // This variable will eventually store the path that
                           // is found by the A* search.
   auto &SNodes() { return m_Nodes; };
+  auto &GetNodeToRoadMap() { return node_to_road; }
 
 private:
   // Add private RouteModel variables and methods here.
   std::vector<Node> m_Nodes;
+  std::unordered_map<int, std::vector<const Model::Road *>> node_to_road;
+  void CreateNodeToRoadHashmap();
 };
