@@ -24,12 +24,13 @@ public:
     Node() {}
     Node(int idx, RouteModel *search_model, Model::Node node)
         : Model::Node(node), parent_model(search_model), index(idx) {}
+    void FindNeighbors();
 
   private:
     // Add private Node variables and methods here.
     int index;
     RouteModel *parent_model = nullptr;
-    Node* FindNeighbor(std::vector<int> node_indices);
+    Node *FindNeighbor(std::vector<int> node_indices);
   };
 
   // Add public RouteModel variables and methods here.

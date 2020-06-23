@@ -38,3 +38,13 @@ RouteModel::Node::FindNeighbor(std::vector<int> node_indices) {
   }
   return closest_node;
 }
+
+void RouteModel::Node::FindNeighbors() {
+  for (auto &road : parent_model->node_to_road[this->index]) {
+    RouteModel::Node *closest_node =
+        this->FindNeighbor(parent_model->Ways()[road->way].nodes);
+    if (closest_node) {
+      this->neighbors.emplace_back(closest_node);
+    }
+  }
+}
