@@ -1,6 +1,6 @@
 # Route Planning
 
-This is the starter code for the Route Planning project. Instructions for each exercise can be found in the `instructions` directory, and unit tests for some exercises in the `test` directory.
+This program uses [A* search algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm) to find path between start and end coordinates entered by the user. It is first project of C++ Udacity Nanodegree Program. It focuses on foundational topics like classes, list, pointers and references. 
 
 ## Cloning
 
@@ -28,7 +28,7 @@ git clone git@github.com:adityakrmaurya/Route-Planning.git --recurse-submodules
   * Windows: recommend using [MinGW](http://www.mingw.org/)
 * IO2D
   * Installation instructions for all operating systems can be found [here](https://github.com/cpp-io2d/P0267_RefImpl/blob/master/BUILDING.md)
-  * Note: Make sure to run `sudo make install`
+  * Note: Make sure to run `sudo make install` at the end of setup
   * This library must be built in a place where CMake `find_package` will be able to find it
 
 ### Compiling
@@ -71,4 +71,10 @@ Exercises with tests will specify which string to pass with `-DTESTING`, but a t
 | Find the Closest Node       |       "FindClosest"      |
 | Write the A\* Search Stub   |        "AStarStub"       |
 | Finish A\* Search           |       "AStarSearch"      |
+
+## Output
+
+|Output-img.png|
+|--------------|
+| <img src="https://raw.githubusercontent.com/adityakrmaurya/Route-Planning/master/output-img.png" widht="500"> |
 
