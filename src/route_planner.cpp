@@ -38,3 +38,14 @@ void RoutePlanner::AStarSearch() {
 float RoutePlanner::CalculateHValue(const RouteModel::Node *node) {
   return node->distance(*end_node);
 }
+
+RouteModel::Node *RoutePlanner::NextNode() {
+  std::sort(open_list.begin(), open_list.end(),
+            [](const auto node1, const auto node2) {
+              return node1->h_value + node1->g_value <
+                     node2->h_value + node2->g_value;
+            });
+  RouteModel::Node *optimal_node = open_list.front();
+  open_list.erase(open_list.begin());
+  return optimal_node;
+}
