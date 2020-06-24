@@ -11,6 +11,7 @@ public:
                float end_y);
   // Add public variables or methods declarations here.
   float GetDistance() { return distance; }
+  void AStarSearch();
 
 private:
   // Add private variables or methods declarations here.
