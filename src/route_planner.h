@@ -17,4 +17,5 @@ private:
   RouteModel &m_Model;
   RouteModel::Node *start_node, *end_node;
   float distance;
+  std::vector<RouteModel::Node> ConstructFinalPath(RouteModel::Node *current_node);
 };
