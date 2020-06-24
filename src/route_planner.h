@@ -23,4 +23,5 @@ private:
   float CalculateHValue(const RouteModel::Node *node);
   std::vector<RouteModel::Node *> open_list;
   RouteModel::Node *NextNode();
+  void AddNeighbors(RouteModel::Node *);
 };
